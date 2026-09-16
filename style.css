@@ -1,0 +1,1068 @@
+/*@media only screen and (max-width: 1500px) {.emrys {padding-left: 2%;}}*/
+/*pointer coarse*/
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .menu {
+        z-index: 10;
+        padding-top: 5vh;
+        position: fixed;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        visibility: visible;
+    }
+}
+
+/*POINTER COARSE*/
+@media only screen and (max-width: 900px),
+(pointer: coarse) {
+    .centre-menu {
+        z-index: 10;
+        padding-top: 5vh;
+        position: fixed;
+        bottom: 55%;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+/*pointer coarse*/
+@media only screen and (max-width: 900px),
+(pointer: coarse) {
+    .menu-blur {
+        z-index: 10;
+        padding-top: 5vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        backdrop-filter: blur(10px);
+    }
+}
+
+/*pointer coarse*/
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .headersmall {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 17vh;
+        align-items: center;
+        justify-items: center;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .headercontentsmall {
+        position: fixed;
+        background-color: none;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .headercontentsmall:hover {
+        filter: invert(100%);
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .headerlarge {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 17vh;
+        align-items: center;
+        justify-items: center;
+        visibility: hidden;
+    }
+}
+
+/*pointer coarse*/
+@media only screen and (max-width: 900px),
+(pointer: coarse) {
+    .header-blur {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        height: 17vh;
+        align-items: center;
+        justify-items: center;
+        mask: linear-gradient(black, black, black, black, transparent);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .contactinfo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(10vw, 100%);
+    }
+}
+
+/*pointer coarse*/
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .menu-items {
+        width: 6vmax;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .centreimage {
+        padding-left: 0vw;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .double-bass {
+        width: 11vmax;
+        filter: sepia(100%) saturate(100%);
+        transform: rotate(20deg);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .double-bass-small {
+        width: 7vmax;
+        filter: sepia(100%) saturate(100%);
+        transform: rotate(20deg);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .about {
+        width: 17vmax;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .about-small {
+        width: 10vmax;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .mountain {
+        width: 18vmax;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .mountain-small {
+        width: 10vmax;
+        filter: sepia(100%) saturate(100%);
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .logo {
+        width: 24vmax;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .logo-small {
+        width: 15vmax;
+        filter: sepia(100%) saturate(100%);
+        position: absolute;
+        transform: translate(-70%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .block {
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        height: 75vh;
+        width: 110vw;
+        text-justify: center;
+        padding-bottom: 0;
+        padding-right: 0;
+        visibility: visible;
+        z-index: -10000;
+        background-color: none;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-track-color: none;
+        scrollbar-button: hidden;
+        scrollbar-color: rgb(187, 84, 84);
+        
+    }
+}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .block-text {
+        width: 80vw; margin-left: 10vw;
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    h1 {
+        font-size: 8vmin
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    p {
+        font-size: 4vmin;
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .link-pic {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 90vmax;
+        opacity: 0
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .teacoffee {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 3vh;
+        transform: translate(0, -25%);
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    .walkingtourconcerts {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 3vh;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(pointer: coarse) {
+    .picgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(pointer: coarse) {
+    .picgridabout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(pointer: coarse) {
+    .collage {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(pointer: coarse) {
+    .collagesolo {
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(pointer: coarse) {
+    .collageabout {
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 500px),
+(pointer: coarse) {
+    .center {
+        position: relative;
+        padding-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) and (pointer: fine) {
+    .header-blur {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 23vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        mask: linear-gradient(black, black, black, black, transparent);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        transform: translate3d(0, 0, 0);
+        width: 100vmin;
+    }
+}
+
+
+
+
+
+/*keep below as breakpoint margins, set above as pointer coarse?*/
+/*
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: coarse) {.menu {z-index: 10; position: fixed; bottom: 0; left: 0; right: 0; padding-bottom: 2vh; padding-left: 5vw; padding-right: 5vw; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: visible;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: fine) {.menu {z-index: 10; position: fixed; bottom: 0; left: 0; right: 0; padding-bottom: 2vh; margin-left: auto; margin-right: auto; width: 155vh; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: visible;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: coarse) {.centre-menu {z-index: 10; padding-top: 5vh; position: fixed; bottom: 57%; left: 0; right: 0; padding-bottom: 2vh; display: grid; padding-left: 5vw; padding-right: 5vw; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: fine) {.centre-menu {z-index: 10; position: fixed; top: 42vh; bottom: 40vh; left: 0; right: 0; padding-bottom: 2vh; margin-left: auto; margin-right: auto; display: grid; width: 155vh; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: coarse) {.headersmall {position: fixed; z-index: 10; top: 0; left: 0; right: 0; padding-left: 5vw; padding-right: 5vw; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: visible;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: fine) {.headersmall {position: fixed; z-index: 10; top: 0; left: 0; right: 0; padding-left: 5vw; padding-right: 5vw; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: visible;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: fine) {.headerlarge {position: fixed; z-index: 10; top: 0; left: 0; right: 0; height: 23vh; margin-left: auto; margin-right: auto; width: 155vh; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: hidden;}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: coarse) {.headerlarge {position: fixed; z-index: 10; top: 0; left: 0; right: 0; height: 23vh; margin-left: auto; margin-right: auto; width: 155vh; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; justify-items: center; visibility: hidden;}
+}
+*/
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: coarse) {
+    .header-blur {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        mask: linear-gradient(black, black, black, black, transparent);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        transform: translate3d(-58px, 0, 0);
+        height: 23vmin;
+    }
+}
+
+/*pointer coarse*/
+@media only screen and (min-width: 900px) and (max-width: 1500px) and (pointer: fine) {
+    .header-blur {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 23vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        mask: linear-gradient(black, black, black, black, transparent);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        transform: translate3d(-58px, 0, 0);
+        width: 130vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media only screen and (min-width: 1500px) {.emrys {padding-left: 20%;}}*/
+
+@media only screen and (min-width: 1500px) {
+    .menu {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .centre-menu {
+        z-index: 10;
+        position: fixed;
+        top: 42vh;
+        bottom: 40vh;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .centreimage {
+        padding-left: 9vw;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .menu-blur {
+        z-index: 10;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-bottom: 2vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .headersmall {
+        position: fixed;
+        z-index: 10;
+        width: vw;
+        height: 23vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .headerlarge {
+        position: fixed;
+        z-index: 10;
+        width: vw;
+        height: 23vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        visibility: visible;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .header-blur {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 23vh;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        mask: linear-gradient(black, black, black, black, transparent);
+        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(7px);
+        transform: translate3d(-89px, 0, 0);
+        width: 130vh;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .contactinfo {
+        position: absolute;
+        transform: translate(0%, 100%);
+        margin-right: 17vw;
+        margin-left: 17vw;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .menu-items {
+        width: 7vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .double-bass {
+        width: 13vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .about {
+        width: 20vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .mountain {
+        width: 24vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .double-bass-small {
+        width: 10vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .about-small {
+        width: 15vmin;
+        filter: sepia(100%) saturate(100%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .mountain-small {
+        width: 18vmin;
+        filter: sepia(100%) saturate(100%);
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .teacoffee {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 3vh;
+        transform: translate(0, -25%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .walkingtourconcerts {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 3vh;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 420px) {
+    .logo {
+        width: 34vmin;
+        filter: sepia(100%) saturate(100%);
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .logo-small {
+        width: 29vmin;
+        filter: sepia(100%) saturate(100%);
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    h1 {
+        font-size: 7vmin;
+    }
+}
+
+
+
+@media only screen and (min-width: 420px) {
+    p {
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    .link-pic {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 70vmin;
+        opacity: 1
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .picgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .picgridabout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .collage {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .collageabout {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .collagesolo {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .block {
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100vw;
+        height: 70vh;
+        text-justify: center;
+        padding-bottom: 0;
+        padding-right: 0;
+        visibility: visible;
+        z-index: -10000;
+        background-color: none;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-track-color: none;
+        scrollbar-button: hidden;
+        scrollbar-color: rgb(187, 84, 84);
+        
+    }
+}
+
+@media only screen and (min-width: 1500px),
+(pointer: coarse) {
+    .block-text {
+        width: 50vw; margin-left: 25vw;
+        
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .center {
+        position: relative;
+        padding-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+h1 {
+    font-family: Evening-Regular;
+    font-weight: bold;
+    color: rgb(255, 239, 239);
+    z-index: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: Evening-Regular;
+    color: rgb(255, 239, 239);
+    z-index: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 239, 239);
+}
+
+.link-pic {
+    position: absolute;
+    transform: translate(-50%, 0);
+    max-width: 90vmax;
+    opacity: 0;
+    z-index: 0;
+}
+
+@media only screen and (max-width: 1500px){
+p {
+    font-family: Evening-Regular;
+    font-weight: normal;
+    color: rgb(255, 239, 239);
+    z-index: 0;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 1500px){
+p {
+    font-family: Evening-Regular;
+    font-weight: normal;
+    color: rgb(255, 239, 239);
+    z-index: 0;
+    text-align: center;
+}
+}
+
+
+iframe {
+    width: 80vmin;
+    height: 45vmin
+}
+
+
+.mailing-list {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    filter: sepia(100%) saturate(100%);
+    background-color: black;
+}
+
+.hover-effect:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    filter: sepia(100%) saturate(100%);
+}
+
+@font-face {
+    font-family: Evening-Regular;
+    src: url("Evening-Regular.otf");
+}
+
+
+
+/*  UPDATES*/
+
+
+
+@media only screen and (max-width:1500px) {
+    .dropbtn {
+        position: fixed;
+        top: 0;
+        left: 2vw;
+        width: 15vmin;
+        height: 17vh;
+        font-family: Evening-Regular;
+        font-weight: Bold;
+        padding: 0px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+        background-color: none;
+        transform: translate(0, -0.3vh);
+        background-color: none;
+    }
+}
+
+
+@media only screen and (min-width:1500px) {
+    .dropbtn {
+        position: fixed;
+        top: 3vh;
+        left: 10vw;
+        width: 34vmin;
+        height: 12vmin;
+        font-family: Evening-Regular;
+        font-weight: Bold;
+        padding: 0px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+}
+
+
+
+/* Dropdown button on hover & focus 
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 0vh;
+    z-index: 1000;
+
+
+}
+
+.dropdown-large {
+    position: fixed;
+    top: 15vh;
+    left: 10vw;
+    padding-top: 0vh;
+    z-index: 1000;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-small {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: none;
+    width: 100vw;
+    z-index: 1000;
+    align-items: center;
+    text-align: center;
+
+
+
+}
+
+.dropdown-content-large {
+    display: none;
+    position: fixed;
+    top: 15vh;
+    left: 10vw;
+    background-color: none;
+    width: 34vmin;
+    z-index: 1000;
+    align-items: center;
+    text-align: center;
+    
+
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content-small a {
+    color: black;
+    padding: none;
+    text-decoration: none;
+    display: grid;
+    width: device-width;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: Evening-Regular;
+    font-weight: Bold;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+
+
+
+}
+
+
+.dropdown-content-large a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: grid;
+    height: 15vmin;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: Evening-Regular;
+    font-weight: Bold;
+    z-index: 1000;
+}
+
+
+/* Show the dropdown menu on hover */
+
+
+
+@media only screen and (min-width: 1500px) {
+    .dropdown-large:hover .dropdown-content-large {
+        display: grid;
+    }
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown*/
+@media only screen and (min-width: 1500px) {
+    .dropdown-large:hover .dropbtn {
+        filter: invert(100%);
+        background-color: white;
+    }
+}
+
+/*
+@media only screen and (max-width: 800px) {
+.dropdown:hover .dropbtn {filter: invert(100%); background-color: rgba(255, 255, 255, 0);}}
+
+.dropdown-content-small a:hover {filter: invert(100%);}*/
+
+.dropdown-content-large a:hover {
+    filter: invert(100%);
+}
+
+
+.show {
+    display: grid;
+}
+
+.hide {
+    
+    visibility: hidden;
+}
+
+.menubuttonreverse {
+    size: 100000%;
+
+    border: none;
+
+}
