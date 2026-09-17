@@ -245,7 +245,7 @@
     }
 }
 
-@media only screen and (max-width: 1500px),
+@media only screen and (max-width: 1500px) and
 (pointer: coarse) {
     .block {
         position: absolute;
@@ -253,11 +253,11 @@
         left: 0;
         height: 65vh;
         width: 110vw;
-        text-justify: center;
+        text-align: center;
         padding-bottom: 0;
         padding-right: 0;
         visibility: visible;
-        z-index: -10000;
+        z-index: 1;
         background-color: none;
         overflow-y: scroll;
         scrollbar-width: thin;
@@ -265,13 +265,38 @@
         scrollbar-button: hidden;
         scrollbar-color: rgb(187, 84, 84);
         
+        
     }
 }
 
-@media only screen and (max-width: 1500px),
-(pointer: coarse) {
+@media only screen and (max-width: 1500px) and
+(pointer: fine) {
+    .block {
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        height: 73vh;
+        width: 110vw;
+        text-align: center;
+        padding-bottom: 0;
+        padding-right: 0;
+        visibility: visible;
+        z-index: 1;
+        background-color: none;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        scrollbar-track-color: none;
+        scrollbar-button: hidden;
+        scrollbar-color: rgb(187, 84, 84);
+        background-color: none;
+        
+    }
+}
+
+@media only screen and (max-width: 1500px) {
     .block-text {
         width: 96vw; margin-left: 2vw;
+        display: block;
         
     }
 }
@@ -287,7 +312,21 @@
 
 @media only screen and (max-width: 420px),
 (pointer: coarse) {
+    h2 {
+        font-size: 7vmin
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
     p {
+        font-size: 5vmin;
+    }
+}
+
+@media only screen and (max-width: 420px),
+(pointer: coarse) {
+    a {
         font-size: 5vmin;
     }
 }
@@ -335,6 +374,7 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
+        
     }
 }
 
@@ -351,14 +391,15 @@
 @media only screen and (max-width: 600px),
 (pointer: coarse) {
     .collage {
-        width: 90vw;
+        width: 60%;
+        
     }
 }
 
 @media only screen and (max-width: 600px),
 (pointer: coarse) {
     .collagesolo {
-        width: 90vw;
+        width: 60%;
     }
 }
 
@@ -720,10 +761,22 @@
     }
 }
 
+@media only screen and (min-width: 420px) {
+    h2 {
+        font-size: 6vmin;
+    }
+}
+
 
 
 @media only screen and (min-width: 420px) {
     p {
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (min-width: 420px) {
+    a {
         font-size: 3vmin;
     }
 }
@@ -744,6 +797,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1vw;
+        
     }
 }
 
@@ -795,8 +849,7 @@
     }
 }
 
-@media only screen and (min-width: 1500px),
-(pointer: coarse) {
+@media only screen and (min-width: 1500px) {
     .block-text {
         width: 50vw; margin-left: 25vw;
         
@@ -831,6 +884,8 @@ h2 {
 a {
     text-decoration: none;
     color: rgb(255, 239, 239);
+    font-family: evening-regular;
+    font-weight: bold;
 }
 
 .link-pic {
@@ -869,16 +924,17 @@ iframe {
 
 
 .mailing-list {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    color: rgb(255, 255, 239);
+    font-weight: normal;
     filter: sepia(100%) saturate(100%);
     background-color: black;
+    
 }
 
 .hover-effect:hover {
     cursor: pointer;
     color: black;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 239);
     filter: sepia(100%) saturate(100%);
 }
 
