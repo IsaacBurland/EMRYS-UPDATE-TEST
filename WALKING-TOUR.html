@@ -56,63 +56,7 @@
         
         
 
-        <script>
-        function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-  
-}
-
-
-function blockhide() {
-  document.getElementById("blockhide").classList.toggle("hide");
-}
-// Close the dropdown menu if the user clicks outside of it
-
-
-/*
-function menubuttonrotate() {
-  document.getElementById('menulogorotate').src="menulogorotate.png"
-}
-
-function menubuttonreverse () {
-  document.getElementById('menulogorotate').src="menulogo.png"
-}
-
-function hidedropdown () {
-  document.getElementById('myDropdown').classList.remove('show')
-}
-
-*/
-
-
-
-function menubuttonrotate() {
-var menulogorotate = document.getElementById("menulogorotate");
-    
-  if (menulogorotate.style.transform === 'rotate(90deg)') {
-    menulogorotate.style.transform = 'rotate(0deg)';
-  } else {
-    menulogorotate.style.transform = 'rotate(90deg)';
-  }
-  }
-
-
-
-
-</script>
+        
 
         
 
@@ -121,7 +65,7 @@ var menulogorotate = document.getElementById("menulogorotate");
 
             @media only screen and (min-width: 1500px) {body {width: 100vw; height: 100vh; background-image: url(EMRYSBACKGROUND.jpg); background-position: center; background-size: contain; background-repeat: no-repeat; background-attachment: fixed;}}
 -->
-           <div class="headersmall">
+           <div class="headersmall" id="headersmall">
             
             <div>
               <div class="dropdown-small"> 
@@ -152,7 +96,11 @@ var menulogorotate = document.getElementById("menulogorotate");
             <div></div>
         </div> 
 
-
+<div id="headershrunk" class="headershrink">
+          <div><img style="height: 5vh;" src="EMRYSLOGOFAVICON.png" alt=""></div>
+          <div></div>
+          <div></div>
+        </div>
         <!--
         <button onclick="menubuttonreverse(); hidedropdown()" class="menubuttonreverse"><img style="opacity: 0%; z-index: 100000; size: 1000%; overflow: hidden;" src="LINKPIC.jpg" alt=""></button>
         -->
@@ -182,7 +130,7 @@ var menulogorotate = document.getElementById("menulogorotate");
         </div>
 
 
-        <div class="menu">
+        <div class="menu" id="menu">
             
             <div><a target="_blank" href="https://www.instagram.com/emrys_music_/"><img style="text-align: center; filter: invert(0%);" class="menu-items" src="INSTAGRAM.png" alt="EMRYS Instagram"></a></div>
             <div><a target="_blank" href="https://www.youtube.com/watch?v=WxBNK2othuY&list=PLcSSja10ypCjxff4FdkxzLwWzj-yuNwCM"><img style="text-align: center; filter: invert(0%);" class="menu-items" src="YOUTUBE.png" alt="EMRYS Youtube"></a></div>
@@ -192,9 +140,13 @@ var menulogorotate = document.getElementById("menulogorotate");
 
 
         <div class="block" id="blockhide">
+          
 
+
+        
             <div class="block-text">
             
+              
                 <h1>Walking and Music Tour of the Lake District - April 2026</h1>
 
             <div style="text-align: center; text-justify: center;"><img class="collagesolo" style="align-items: center; justify-items: center;" src="Poster WEBSITE.jpg" alt="EMRYS contemplate on a log" loading="lazy"></div>
@@ -466,10 +418,118 @@ Est. 8 miles
             
 </div>
 
-        
-           
-        
-       
+        <script>
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  
+}
+
+
+function blockhide() {
+  document.getElementById("blockhide").classList.toggle("hide");
+}
+// Close the dropdown menu if the user clicks outside of it
+
+
+/*
+function menubuttonrotate() {
+  document.getElementById('menulogorotate').src="menulogorotate.png"
+}
+
+function menubuttonreverse () {
+  document.getElementById('menulogorotate').src="menulogo.png"
+}
+
+function hidedropdown () {
+  document.getElementById('myDropdown').classList.remove('show')
+}
+
+*/
+
+
+
+function menubuttonrotate() {
+var menulogorotate = document.getElementById("menulogorotate");
+    
+  if (menulogorotate.style.transform === 'rotate(90deg)') {
+    menulogorotate.style.transform = 'rotate(0deg)';
+  } else {
+    menulogorotate.style.transform = 'rotate(90deg)';
+  }
+  }
+
+
+
+
+  const scrollableBlock = document.getElementById("blockhide");
+  const header = document.getElementById("headershrunk");
+// 2. Attach the scroll event listener directly to that block
+scrollableBlock.addEventListener("scroll", () => {
+  const totalScrollableHeight = scrollableBlock.scrollHeight - scrollableBlock.clientHeight;
+
+  const currentScroll = scrollableBlock.scrollTop;
+
+  const scrollPercentage = currentScroll / totalScrollableHeight;
+  
+  // 3. Measure the scroll position of the block itself (not the window)
+  if (scrollPercentage >= 0.005) {
+    header.classList.add("showheadershrunk"); 
+  } else {
+    header.classList.remove("showheadershrunk"); 
+  }
+});
+
+
+
+const headersmall = document.getElementById("headersmall");
+// 2. Attach the scroll event listener directly to that block
+scrollableBlock.addEventListener("scroll", () => {
+  const totalScrollableHeight = scrollableBlock.scrollHeight - scrollableBlock.clientHeight;
+
+  const currentScroll = scrollableBlock.scrollTop;
+
+  const scrollPercentage = currentScroll / totalScrollableHeight;
+  
+  // 3. Measure the scroll position of the block itself (not the window)
+  if (scrollPercentage >= 0.005) {
+    headersmall.classList.add("headersmallhide"); 
+  } else {
+    headersmall.classList.remove("headersmallhide"); 
+  }
+});
+
+
+const menu = document.getElementById("menu");
+// 2. Attach the scroll event listener directly to that block
+scrollableBlock.addEventListener("scroll", () => {
+  const totalScrollableHeight = scrollableBlock.scrollHeight - scrollableBlock.clientHeight;
+
+  const currentScroll = scrollableBlock.scrollTop;
+
+  const scrollPercentage = currentScroll / totalScrollableHeight;
+  
+  // 3. Measure the scroll position of the block itself (not the window)
+  if (scrollPercentage >= 0.01) {
+    menu.classList.add("menuhide"); 
+  } else {
+    menu.classList.remove("menuhide"); 
+  }
+});
+
+</script>
 
 
     </body>

@@ -4,7 +4,7 @@
 @media only screen and (max-width: 1500px),
 (pointer: coarse) {
     .menu {
-        z-index: 10;
+        z-index: 100;
         padding-top: 5vh;
         position: fixed;
         padding-left: 5vw;
@@ -18,8 +18,13 @@
         align-items: center;
         justify-items: center;
         visibility: visible;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+        background-color: rgb(156, 8, 0);
     }
 }
+
+.menu.menuhide {opacity: 0;}
 
 /*POINTER COARSE*/
 @media only screen and (max-width: 900px),
@@ -65,7 +70,7 @@
 (pointer: coarse) {
     .headersmall {
         position: fixed;
-        z-index: 10;
+        z-index: 100;
         top: 0;
         left: 0;
         right: 0;
@@ -73,12 +78,43 @@
         padding-left: 5vw;
         padding-right: 5vw;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 17vh;
+        height: 13vh;
         align-items: center;
         justify-items: center;
         visibility: visible;
+        transition: visibility 0.1s ease;
     }
 }
+
+.headersmall.headersmallhide {visibility: hidden;}
+
+@media only screen and (max-width: 1500px),
+(pointer: coarse) {
+    .headershrink {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 5vh;
+        align-items: left;
+        justify-items: left;
+        opacity: 0;
+        background-color: white;
+        filter: invert(100%);
+        transition: opacity 0.2s ease;
+    }
+}
+
+.headershrink.showheadershrunk {opacity: 1; transform: translateY(0);}
+
+
+
+
 
 @media only screen and (max-width: 1500px),
 (pointer: coarse) {
@@ -227,11 +263,13 @@
     }
 }
 
-@media only screen and (max-width: 420px),
+@media only screen and (max-width: 1500px),
 (pointer: coarse) {
     .logo {
         width: 24vmax;
         filter: sepia(100%) saturate(100%);
+        text-align: center; text-justify: center;
+        transform: translate(0, 1vh);
     }
 }
 
@@ -249,10 +287,10 @@
 (pointer: coarse) {
     .block {
         position: absolute;
-        top: 15vh;
+        top: 5vh;
         left: 0;
-        height: 65vh;
-        width: 110vw;
+        height: 95vh;
+        width: 100vw;
         text-align: center;
         padding-bottom: 0;
         padding-right: 0;
@@ -262,9 +300,17 @@
         overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-track-color: none;
-        scrollbar-button: hidden;
-        scrollbar-color: rgb(187, 84, 84);
         
+        scrollbar-color: rgb(0, 0, 0);
+        
+        /*backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  mask-image: linear-gradient(to bottom, transparent 0%, black 1%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 1%);
+        
+  mask-image: linear-gradient(to top, transparent 0%, black 1%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 1%);*/
         
     }
 }
@@ -273,10 +319,10 @@
 (pointer: fine) {
     .block {
         position: absolute;
-        top: 15vh;
+        top: 5vh;
         left: 0;
-        height: 73vh;
-        width: 110vw;
+        height: 95vh;
+        width: 100vw;
         text-align: center;
         padding-bottom: 0;
         padding-right: 0;
@@ -286,10 +332,20 @@
         overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-track-color: none;
-        scrollbar-button: hidden;
-        scrollbar-color: rgb(187, 84, 84);
-        background-color: none;
         
+        scrollbar-color: rgb(0, 0, 0);
+        background-color: rgba(156, 8, 0);
+        
+    /*
+        backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  mask-image: linear-gradient(to bottom, transparent 0%, black 1%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 1%);
+        
+  mask-image: linear-gradient(to top, transparent 0%, black 1%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 1%);
+        border-color: black;*/
     }
 }
 
@@ -297,7 +353,7 @@
     .block-text {
         width: 96vw; margin-left: 2vw;
         display: block;
-        
+        padding-top: 8vh;
     }
 }
 
@@ -547,6 +603,8 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         justify-items: center;
+        background-color: rgb(156, 8, 0);
+        z-index: 100;
     }
 }
 
@@ -737,7 +795,7 @@
 }
 
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 1500px) {
     .logo {
         width: 34vmin;
         filter: sepia(100%) saturate(100%);
@@ -830,10 +888,10 @@
 @media only screen and (min-width: 1500px) {
     .block {
         position: absolute;
-        top: 15vh;
+        top: 0;
         left: 0;
         width: 100vw;
-        height: 70vh;
+        height: 100vh;
         text-justify: center;
         padding-bottom: 0;
         padding-right: 0;
@@ -843,15 +901,23 @@
         overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-track-color: none;
-        scrollbar-button: hidden;
-        scrollbar-color: rgb(187, 84, 84);
+        
+        scrollbar-color: rgb(0,0,0);
+        backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  mask-image: linear-gradient(to top, transparent 0%, black 1%);
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 1%);
+  
+        
         
     }
 }
 
+
+    
 @media only screen and (min-width: 1500px) {
     .block-text {
-        width: 50vw; margin-left: 25vw;
+        width: 48vw; margin-left: 26vw; padding-top: 15vh;
         
     }
 }
@@ -955,7 +1021,7 @@ iframe {
         top: 0;
         left: 2vw;
         width: 15vmin;
-        height: 17vh;
+        height: 13vh;
         font-family: Evening-Regular;
         font-weight: Bold;
         padding: 0px;
@@ -964,7 +1030,7 @@ iframe {
         cursor: pointer;
         z-index: 1000;
         background-color: none;
-        transform: translate(0, -0.3vh);
+        transform: translate(0, 1vh);;
         background-color: none;
     }
 }
