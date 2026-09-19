@@ -1133,7 +1133,7 @@ iframe {
     .dropbtn {
         position: fixed;
         top: 3vh;
-        left: 10vw;
+        left: 8vw;
         width: 34vmin;
         height: 12vmin;
         font-family: Evening-Regular;
@@ -1171,6 +1171,7 @@ iframe {
     left: 10vw;
     padding-top: 0vh;
     z-index: 1000;
+    
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -1193,13 +1194,14 @@ iframe {
     display: none;
     position: fixed;
     top: 15vh;
-    left: 10vw;
+    left: 4vw;
     background-color: none;
-    width: 34vmin;
+   
     z-index: 1000;
-    align-items: left;
-    text-align: left;
-    place-items: left;
+    align-items: right;
+    text-align: right;
+    place-items: right;
+    justify-items: right;
 
 }
 
