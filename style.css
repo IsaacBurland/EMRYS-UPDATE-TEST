@@ -11,7 +11,7 @@
 
 
 
-
+u {font-weight: normal; text-decoration-thickness: 0;}
 
 @media only screen and (max-width: 1500px),
 (pointer: coarse) {
@@ -408,14 +408,14 @@
 @media only screen and (max-width: 420px),
 (pointer: coarse) {
     h1 {
-        font-size: 8vmin
+        font-size: 5vmin
     }
 }
 
 @media only screen and (max-width: 420px),
 (pointer: coarse) {
     h2 {
-        font-size: 7vmin
+        font-size: 5vmin
     }
 }
 
@@ -429,9 +429,11 @@
 @media only screen and (max-width: 420px),
 (pointer: coarse) {
     a {
-        font-size: 5vmin;
+        font-size: 5vmin; font-weight: normal;
     }
 }
+
+i {font-weight: normal;}
 
 @media only screen and (max-width: 420px),
 (pointer: coarse) {
@@ -885,13 +887,13 @@
 
 @media only screen and (min-width: 420px) {
     h1 {
-        font-size: 7vmin;
+        font-size: 3vmin; font-weight: bold;
     }
 }
 
 @media only screen and (min-width: 420px) {
     h2 {
-        font-size: 6vmin;
+        font-size: 3vmin;
     }
 }
 
@@ -1006,11 +1008,35 @@
 }
     
 
+
+
+@media only screen and (max-width:900px) {
+    .pageheaderwalkingtour
+    {
+        height: 17vh; padding-top: 5vh;
+    }
+}
+
+
+@media only screen and (min-width:900px) and (max-width:1500px) {
+    .pageheaderwalkingtour {
+        height: 15vh;
+        padding-top: 5vh;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .pageheaderwalkingtour {
+        height: 20vh;
+        
+    }
+}
+
 .hoverinvert:hover {filter: invert(100%);}
 
 @media only screen and (min-width: 1500px) {
     .block-text {
-        width: 48vw; margin-left: 26vw; padding-top: 15vh;
+        width: 48vw; margin-left: 30vw; padding-top: 15vh;
         
     }
 }
