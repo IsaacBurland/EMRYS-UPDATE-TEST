@@ -471,7 +471,7 @@ i {font-weight: normal;}
     }
 }
 
-@media only screen and (max-width: 600px),
+@media only screen and (max-width: 900px),
 (pointer: coarse) {
     .picgrid {
         display: grid;
@@ -500,10 +500,10 @@ i {font-weight: normal;}
     }
 }
 
-@media only screen and (max-width: 600px),
+@media only screen and (max-width: 900px),
 (pointer: coarse) {
     .collagesolo {
-        width: 60%;
+        width: 90%;
     }
 }
 
@@ -911,6 +911,8 @@ i {font-weight: normal;}
     }
 }
 
+
+
 @media only screen and (min-width: 420px) {
     .link-pic {
         position: absolute;
@@ -922,11 +924,11 @@ i {font-weight: normal;}
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .picgrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1vw;
+        column-gap: 0;
         
     }
 }
@@ -951,7 +953,7 @@ i {font-weight: normal;}
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
     .collagesolo {
         width: 60%;
     }
@@ -1036,7 +1038,7 @@ i {font-weight: normal;}
 
 @media only screen and (min-width: 1500px) {
     .block-text {
-        width: 48vw; margin-left: 30vw; padding-top: 15vh;
+        width: 48vw; margin-left: 26vw; padding-top: 15vh;
         
     }
 }
@@ -1070,7 +1072,7 @@ a {
     text-decoration: none;
     color: rgb(255, 239, 239);
     font-family: evening-regular;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .link-pic {
@@ -1159,7 +1161,7 @@ iframe {
     .dropbtn {
         position: fixed;
         top: 3vh;
-        left: 8vw;
+        left: 4vw;
         width: 34vmin;
         height: 12vmin;
         font-family: Evening-Regular;
@@ -1216,11 +1218,13 @@ iframe {
 
 }
 
+hr {color: white; border-top: none;}
+
 .dropdown-content-large {
     display: none;
     position: fixed;
     top: 15vh;
-    left: 4vw;
+    left: 0vw;
     background-color: none;
    
     z-index: 1000;
