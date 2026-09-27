@@ -13,35 +13,11 @@
 
 u {font-weight: normal; text-decoration-thickness: 0;}
 
-@media only screen and (max-width: 1500px) and
-(pointer: fine) {
-    .menu {
-        z-index: 100;
-        padding-top: 5vh;
-        position: fixed;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 2vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        opacity: 1;
-        visibility: visible;
-        transition: 0.1s ease;
-        
-        background-color: rgb(0, 71, 114);
-    }
-}
-
-@media only screen and (max-width: 1500px) and
+@media only screen and (max-width: 1500px),
 (pointer: coarse) {
     .menu {
         z-index: 100;
-        padding-top: 2vh;
+        padding-top: 2.5vh;
         position: fixed;
         padding-left: 5vw;
         padding-right: 5vw;
